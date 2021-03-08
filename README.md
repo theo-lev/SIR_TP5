@@ -10,7 +10,7 @@
 
 ##Entitées 
 
-Pour les différentes entitées on peut :  
+Pour les différentes entités on peut :  
 - Récupérer la liste des instances à l'URL : http://localhost:8080/{NOM_ENTITEE}/ (GET)
 - Récupérer une instance selon l'id à l'URL : http://localhost:8080/{NOM_ENTITEE}/{id} (GET)
 - Créer une nouvelle instance à l'URL : http://localhost:8080/{NOM_ENTITEE}/create (POST)
