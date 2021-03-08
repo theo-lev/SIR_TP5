@@ -1,3 +1,22 @@
+#SIR TP5
+
+## Lancer le projet
+1. Changer les configurations de persistance.xml selon la BDD utilisée.
+2. Lancer la BDD.  
+2.5. La base de donnée peut être peuplé avec le TP2-4 (https://github.com/theo-lev/SIR_TP2-4)
+
+3. Lancer RestServer.main()
+
+
+##Entitées 
+
+Pour les différentes entitées on peut :  
+- Récupérer la liste des instances à l'URL : http://localhost:8080/{NOM_ENTITEE}/ (GET)
+- Récupérer une instance selon l'id à l'URL : http://localhost:8080/{NOM_ENTITEE}/{id} (GET)
+- Créer une nouvelle instance à l'URL : http://localhost:8080/{NOM_ENTITEE}/create (POST)
+- Modifier une instance à l'URL : http://localhost:8080/{NOM_ENTITEE}/update/ (POST)
+- Supprimer une instance à l'URL : http://localhost:8080/{NOM_ENTITEE}/{id}/ (DELETE)
+
 ## JaxRS + openAPI
 
 1. Import this project in your IDE, 
