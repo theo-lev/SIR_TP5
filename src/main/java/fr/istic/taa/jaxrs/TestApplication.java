@@ -21,7 +21,7 @@ import java.util.Set;
 
 import javax.ws.rs.core.Application;
 
-import fr.istic.taa.jaxrs.rest.PetResource;
+import fr.istic.taa.jaxrs.rest.*;
 import io.swagger.v3.jaxrs2.integration.resources.OpenApiResource;
 
 public class TestApplication extends Application {
@@ -32,7 +32,11 @@ public class TestApplication extends Application {
 
         final Set<Class<?>> clazzes = new HashSet<Class<?>>();
 
-        clazzes.add(PetResource.class);
+        clazzes.add(TableauResource.class);
+        clazzes.add(FicheResource.class);
+        clazzes.add(SectionResource.class);
+        clazzes.add(UserResource.class);
+        clazzes.add(SondageResource.class);
         clazzes.add(OpenApiResource.class);
         
 
