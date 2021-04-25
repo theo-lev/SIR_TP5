@@ -1,4 +1,9 @@
-#SIR TP5
+# SIR TP5  
+
+## Groupe
+- Théo Lévêque
+- Mariem Roussi
+- Mariama Taha
 
 ## Lancer le projet
 1. Changer les configurations de persistance.xml selon la BDD utilisée.
@@ -8,9 +13,9 @@
 3. Lancer RestServer.main()
 
 
-##Entitées 
+##  Entitées 
 
-Pour les différentes entitées on peut :  
+Pour les différentes entités on peut :  
 - Récupérer la liste des instances à l'URL : http://localhost:8080/{NOM_ENTITEE}/ (GET)
 - Récupérer une instance selon l'id à l'URL : http://localhost:8080/{NOM_ENTITEE}/{id} (GET)
 - Créer une nouvelle instance à l'URL : http://localhost:8080/{NOM_ENTITEE}/create (POST)
@@ -23,8 +28,6 @@ Pour les différentes entitées on peut :
 2. Start the database
 3. Start the database viewer
 4. Start the backend. There is a main class to start the backend
-
-
 
 
 # Task Open API Integration 
