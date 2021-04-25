@@ -1,5 +1,6 @@
 package fr.istic.taa.jaxrs;
 
+import fr.istic.taa.jaxrs.dao.generic.JpaTest;
 import io.undertow.Undertow;
 import org.apache.log4j.BasicConfigurator;
 import org.jboss.resteasy.plugins.server.undertow.UndertowJaxrsServer;
@@ -22,7 +23,7 @@ public class RestServer {
         TestApplication ta = new TestApplication();
 
         ut.deploy(ta);
-
+        
         ut.start(
                 Undertow.builder()
                         .addHttpListener(8080, "localhost")
@@ -30,5 +31,9 @@ public class RestServer {
         );
 
         logger.info("JAX-RS based micro-service running!");
+        JpaTest jpaTest = JpaTest.remplirBase();
+
+
+
     }
 }
