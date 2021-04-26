@@ -1,6 +1,7 @@
 package fr.istic.taa.jaxrs.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -13,13 +14,16 @@ public class Fiche implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @JsonBackReference
+    @ManyToOne
+    @JsonBackReference(value = "fiche_section")
     private Section section;
 
     private String name;
 
     private Date date_butoir;
 
+    @ManyToOne
+    @JsonBackReference(value = "fiche_user")
     private User user;
 
     private float heures_estime;

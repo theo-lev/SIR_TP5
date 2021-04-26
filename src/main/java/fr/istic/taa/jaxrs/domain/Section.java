@@ -18,11 +18,11 @@ public class Section implements Serializable {
     private String name;
 
     @ManyToOne
-    @JsonBackReference
+    @JsonBackReference(value = "section_tableau")
     private Tableau tableau;
 
-    @ElementCollection(targetClass=Fiche.class)
-    @JsonManagedReference
+    @OneToMany
+    @JsonManagedReference(value = "fiche_section")
     private List<Fiche> fiches = new ArrayList<>();
 
     public Section() {}

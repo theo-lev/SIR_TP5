@@ -37,11 +37,9 @@ public class FicheResource {
 
     @POST
     @Path("/create")
-    @Consumes("MediaType.TEXT_PLAIN")
-    public Response addFiche( @Parameter(description = "Ajout Fiche", required = true) String fiche)  {
-        Gson g = new Gson();
-        Fiche f = g.fromJson(fiche, Fiche.class);
-        this.ficheDao.save(f);
+    @Consumes("application/json")
+    public Response addFiche( @Parameter(description = "Ajout Fiche", required = true) Fiche fiche)  {
+        this.ficheDao.save(fiche);
         return Response.ok().entity("SUCCESS").build();
     }
 

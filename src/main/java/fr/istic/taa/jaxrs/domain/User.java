@@ -17,7 +17,7 @@ public class User implements Serializable {
     private String name;
 
     @ElementCollection(targetClass=Fiche.class)
-    @JsonManagedReference
+    @JsonManagedReference(value = "fiche_user")
     private List<Fiche> fiches_attrib;
 
     public Long getId() { return id; }

@@ -1,4 +1,4 @@
-package fr.istic.taa.jaxrs.dao.generic;
+package fr.istic.taa.jaxrs;
 
 import fr.istic.taa.jaxrs.domain.Fiche;
 import fr.istic.taa.jaxrs.domain.Section;
@@ -18,7 +18,7 @@ public class JpaTest {
 		this.manager = manager;
 	}
 
-	public static JpaTest remplirBase() {
+	public static void main( String[] args ) {
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("bdd");
 		EntityManager manager = factory.createEntityManager();
 		JpaTest test = new JpaTest(manager);
@@ -37,7 +37,6 @@ public class JpaTest {
 
 		manager.close();
 		System.out.println(".. done");
-		return test;
 	}
 
 	private void createFichesTableaux() {

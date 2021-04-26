@@ -16,9 +16,9 @@ public class Tableau implements Serializable {
 
     private String name;
 
-    @ElementCollection(targetClass=Section.class)
-    @JsonManagedReference
-    private List<Section> sections = new ArrayList<>();
+    @OneToMany
+    @JsonManagedReference(value = "section_tableau")
+    private List<Section> sections;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
