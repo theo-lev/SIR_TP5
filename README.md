@@ -8,10 +8,11 @@
 ## Lancer le projet
 1. Changer les configurations de persistance.xml selon la BDD utilisée.
 2. Lancer la BDD.  
-2.5. La base de donnée peut être peuplé avec le TP2-4 (https://github.com/theo-lev/SIR_TP2-4)
+2.5. La base de donnée peut être peuplé avec JpaTest.main()
 
 3. Lancer RestServer.main()
 
+Le front est ici : https://github.com/Mrouissi/SIR10/
 
 ##  Entitées 
 
