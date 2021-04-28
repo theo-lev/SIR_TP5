@@ -2,7 +2,7 @@
 
 ## Groupe
 - Théo Lévêque
-- Mariem Roussi
+- Mariem Rouissi
 - Mariama Taha
 
 ## Lancer le projet
